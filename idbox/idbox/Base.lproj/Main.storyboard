@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G8c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="idbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFq-UI-ijG">
+                                <rect key="frame" x="20" y="624" width="335" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTI-k9-gFY">
+                                <rect key="frame" x="67" y="283.5" width="240" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxy-q1-ank">
+                                        <rect key="frame" x="70" y="0.0" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="BTh-rx-4Ej"/>
+                                            <constraint firstAttribute="width" constant="100" id="iq9-sM-17w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <state key="normal" title="Lock Box">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.2632067254809547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="lockBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yjU-mh-3dV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oh1-HB-hRQ">
+                                        <rect key="frame" x="20" y="58" width="200" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="5mj-Uo-Dp9"/>
+                                            <constraint firstAttribute="height" constant="50" id="B5Y-l9-zZK"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="X4J-sm-Q12"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <state key="normal" title="Unlock Box">
+                                            <color key="titleColor" red="0.0" green="0.66547033629441632" blue="0.57722854949238056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="unlockBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="clf-ZI-MYz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0Z0-7S-hqF"/>
+                                    <constraint firstItem="Bxy-q1-ank" firstAttribute="centerX" secondItem="JTI-k9-gFY" secondAttribute="centerX" id="0kg-5i-9rT"/>
+                                    <constraint firstItem="oh1-HB-hRQ" firstAttribute="centerX" secondItem="JTI-k9-gFY" secondAttribute="centerX" id="m7r-1F-eow"/>
+                                    <constraint firstAttribute="width" constant="240" id="vv2-fE-nb9"/>
+                                    <constraint firstItem="Bxy-q1-ank" firstAttribute="top" secondItem="JTI-k9-gFY" secondAttribute="top" id="xAQ-ku-n15"/>
+                                    <constraint firstItem="oh1-HB-hRQ" firstAttribute="top" secondItem="Bxy-q1-ank" secondAttribute="bottom" constant="8" id="xq5-vR-NpF"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDBox" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npG-2b-Nch">
+                                <rect key="frame" x="37" y="28" width="300" height="39.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="dZq-KR-sm7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.50789003456590498" blue="0.67292592005076135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MFq-UI-ijG" secondAttribute="trailing" constant="20" id="6gA-mg-Qpg"/>
+                            <constraint firstItem="JTI-k9-gFY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ChH-cE-rIB"/>
+                            <constraint firstItem="npG-2b-Nch" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G5s-YW-GJb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MFq-UI-ijG" secondAttribute="bottom" constant="20" id="Oo9-mT-gDE"/>
+                            <constraint firstItem="JTI-k9-gFY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V6Z-Tc-b3b"/>
+                            <constraint firstItem="npG-2b-Nch" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="kcX-3Y-KYT"/>
+                            <constraint firstItem="MFq-UI-ijG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="z5b-xy-gBx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="message" destination="MFq-UI-ijG" id="emp-gB-eTd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
+        </scene>
+    </scenes>
+</document>
